@@ -13,19 +13,3 @@ TODO:
 10)Переработать архитектуру бота
 11)Реализовать проверку введеного города на наличие в json файле
 12)Переделать оформление бота
-
-
-Стэк технологий на данный момент:
-Python + Aiogram
-PostgreSQL
-
-
-Пример URL - Avito
-https://www.avito.ru/cheboksary/avtomobili/vaz_lada/priora-ASgBAgICAkTgtg3GmSjitg2qrSg?cd=1&radius=200
-
-Пример URL - Auto.ru
-https://auto.ru/cars/vaz/2170/all/
-
-Пример URL - Drom.ru
-https://auto.drom.ru/lada/2104/
-
