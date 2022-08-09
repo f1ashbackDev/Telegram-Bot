@@ -1,8 +1,8 @@
 
-BOT_TOKEN = "5272261430:AAEVrs1WsHt0zKydyuxgkfA0yl3pO9nmKLs"
+BOT_TOKEN = ""
 
 connectionSetting = {
-    'user': 'postgres',
-    'password': 'krasava026',
-    'database': 'python-bot'
+    'user': '',
+    'password': '',
+    'database': ''
 }
