@@ -16,6 +16,7 @@ async def CreateUser(user, city):
         cursor = conn.cursor()
         query = f"INSERT INTO users (user_id, city) VALUES ('{user}', '{city}')"
         cursor.execute(query)
+        conn.commit()
         print(f'Аккаунт с ид {user} был создан!')
     except (Exception, Error) as error:
         print("Ошибка при работе с SQL", error)
@@ -25,9 +26,16 @@ async def getUserData(user):
         cursor = conn.cursor()
         query = f"select * from users where user_id = {user}"
         cursor.execute(query)
-        user_records = cursor.fetchall()
-        for row in user_records:
-            print('ало')
+        userCheck = cursor.fetchall()
+        if userCheck != None:
             return True
     except (Exception, Error) as error:
         print("Ошибка при работе с SQL", error)
+
+async def getUserCity(user):
+    try:
+        cursor = conn.cursor()
+        query = f"select * from users where user_id = {user}"
+        cursor.execute(query)
+    except (Exception, Error) as error:
+        print('Ошибка при работе с SQL', error)
